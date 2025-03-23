@@ -70,8 +70,10 @@
 # 2025-03-16
 
 ## 进展:
-1. 安装WSL系统并在其中配置项目环境，通过编译，下载权重后，可以正常运行；测试和理解katago程序的subcommand；安装python试运行脚本，尝试跑synchronous_loop.sh，其中synchronous_loop.sh输入参数可能没选对，可以运行但没跑完。这周出差使用一个3060的笔记本，网速有限，下不了太多东西，所以编译的后端采用CUDA，虚拟环境直接用了python3 env在项目目录里面创建。python3这个虚拟环境我还是有很多没搞明白的地方，后续在台式机上打算用conda先创建环境。
-2.大致阅读了subcommand的主要脚本，python部分的脚本和config文档，对selfplay的流程有了大致的了解，但细节还有不清楚的地方，下周需要接着看。
+1. 安装WSL系统并在其中配置项目环境，通过编译，下载权重后，可以正常运行；测试和理解katago程序的subcommand；
+2. 安装python试运行脚本，尝试跑synchronous_loop.sh，其中synchronous_loop.sh输入参数可能没选对，可以运行但没跑完。
+这周出差使用一个3060的笔记本，网速有限，下不了太多东西，所以编译的后端采用CUDA，虚拟环境直接用了python3 env在项目目录里面创建。python3这个虚拟环境我还是有很多没搞明白的地方，后续在台式机上打算用conda先创建环境。
+3.大致阅读了subcommand的主要脚本，python部分的脚本和config文档，对selfplay的流程有了大致的了解，但细节还有不清楚的地方，下周需要接着看。
 
 ## 主要问题
 1. 需要明确下一步的目标，是否还有重要得内容待完成；目前暂且是打算用modelconfig里面的小模型参数再试一下跑synchronous_loop.sh，并且尝试把脚本里面的一些训练参数进行修改。
